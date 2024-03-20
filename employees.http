@@ -1,0 +1,32 @@
+###
+GET http://localhost:3000/employees
+
+### GET ALL BY QUERY ROLE
+GET http://localhost:3000/employees?role=ADMIN
+
+### GET BY ID
+GET http://localhost:3000/employees/1
+
+###
+POST http://localhost:3000/employees
+Content-Type: application/json
+
+{
+  "name": "Intern",
+  "email": "intern@solomon.id",
+  "role": "INTERN"
+}
+
+### UPDATE
+PATCH http://localhost:3000/employees/1
+Content-Type: application/json
+
+{
+  "name": "Novin Update",
+  "email": "novin@solomon.id",
+  "role": "ADMIN"
+}
+
+### DELETE
+DELETE http://localhost:3000/employees/3
+
