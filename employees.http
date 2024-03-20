@@ -1,14 +1,14 @@
 ###
-GET http://localhost:3000/employees
+GET http://localhost:3000/api/v1/employees
 
 ### GET ALL BY QUERY ROLE
-GET http://localhost:3000/employees?role=ADMIN
+GET http://localhost:3000/api/v1/employees?role=ADMIN
 
 ### GET BY ID
-GET http://localhost:3000/employees/1
+GET http://localhost:3000/api/v1/employees/1
 
 ###
-POST http://localhost:3000/employees
+POST http://localhost:3000/api/v1/employees
 Content-Type: application/json
 
 {
@@ -18,7 +18,7 @@ Content-Type: application/json
 }
 
 ### UPDATE
-PATCH http://localhost:3000/employees/1
+PATCH http://localhost:3000/api/v1/employees/1
 Content-Type: application/json
 
 {
